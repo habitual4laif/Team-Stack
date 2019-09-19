@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: linear-gradient(205.37deg, #11998E -4.17%, #38EF7D 100.07%);
+
+}
+
+.msgDisplay {
+	font-size: 3rem;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+}
+
+.message {
+	width: 1000px;
+	padding-left:30px;
+	padding-bottom:175px;
+	color:white;
+}
+.topmessage {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	padding-bottom:5px;
+}
+.submessage {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:25px;
+	padding-right:250px;
+}
+.button {
+	border-radius: 20px;
+	background-color:#F4F8F5;
+	border:none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#11998E;
+	text-align:center;
+	font-size:20px;
+	padding:20px;
+	width: 300px;
+	transition:all 0.5s;
+	cursor:pointer;
+	margin-top:50px;
+	/* margin-right: 3rem; */
+}
+.button span {
+	cursor:pointer;
+	display:inline-block;
+	position:relative;
+	transition:0.5s;
+}
+.button span:after{
+	content:'\00bb';
+	position:absolute;
+	opacity:0;
+	top:0;
+	right:-20px;
+	transition:0.5s;
+}
+.button: hover span {
+	padding-right:25px;
+}
+.button: hover span:after {
+	opacity:1;
+	right:0;
+}
+
+.btnMsg {
+	display: inline;
+	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+	color: #11998E;
+}
+
+img {
+	margin-top:-90px;
+	float:right;
+}
+footer {
+  font: 14px/100px "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+  color: #fefefe;
+  text-align: center;
+  font-size:20px;
+    line-height: 26px;
+    padding: 10px 0;
+  }
+ footer>a {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color:purple;
+  text-decoration:none;
+}

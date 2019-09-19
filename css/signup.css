@@ -1,0 +1,289 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.main-container {
+	max-width: 1500px;
+	min-height: 320px;
+}
+.sub-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+.form-container {
+	width: 30%;
+	height: 100vh;
+	background: #ffffff;
+}
+form {
+	margin-top: -2rem;
+}
+.div_for_mobile_view {
+	display: none;
+}
+.logbtn {
+	width: 12rem;
+	background: linear-gradient(215.33deg, #11998e -4.17%, #38ef7d 100.07%);
+	border-radius: 12px;
+	padding: .6rem;
+	color: #fff;
+	font-size: 17px;
+  cursor: pointer;
+}
+.bottom-text {
+	margin-top: 2rem;
+}
+.already_user_text {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 19px;
+}
+
+.already_user_text a {
+	color: #38ef7d;
+}
+
+.already_user_text a:hover {
+	color: #aaa;
+}
+
+.welcome_text {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 109px;
+	line-height: 163px;
+	color: #fff;
+	text-align: center;
+}
+.welcome_text_div {
+	width: 70%;
+	background: linear-gradient(215.33deg, #11998e -4.17%, #38ef7d 100.07%);
+	height: 100vh;
+}
+.labels {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+}
+.welcome_text_p_tag {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+}
+.sign_up_text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 45px;
+	text-align: center;
+	margin-bottom: 20px;
+	letter-spacing: -0.01em;
+}
+
+.emptyErr {
+	font-size: 1rem;
+	color: #ff4f7d;
+	text-align: center;
+}
+
+.pwdErrMsg {
+	font-size: 1rem;
+	color: #ff4f7d;
+	text-align: center;
+}
+
+.emailErr {
+	font-size: 1rem;
+	color: #ff4f7d;
+	text-align: center;
+}
+
+.signMsg {
+	font-size: 1rem;
+	color: #38ef7d;
+	text-align: center;
+}
+
+.login-form {
+	padding: 80px 40px;
+	border-radius: 17px;
+}
+
+.below_text {
+	position: absolute;
+	top: 8.5rem;
+	right: 28.5rem;
+}
+.image_of_team_stack_below_text {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+	margin-right: 1rem;
+}
+.below_text_teamStack {
+	position: absolute;
+	bottom: 3.7rem;
+	right: 3.1rem;
+}
+
+.txtb {
+	border-bottom: 2px solid #adadad;
+	position: relative;
+	margin: 30px 0;
+}
+
+.txtb input {
+	font-size: 15px;
+	color: #333;
+	border: none;
+	width: 100%;
+	outline: none;
+	background: none;
+	padding: 0 5px;
+	height: 40px;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+	.below_text {
+		position: absolute;
+		top: 8.5rem;
+		right: 18.5rem;
+	}
+	.below_text_teamStack {
+		position: absolute;
+		bottom: 4.5rem;
+		right: 3.1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.form-container {
+		width: 40%;
+		height: 120vh;
+		background: #ffffff;
+	}
+	.welcome_text_div {
+		width: 60%;
+		background: linear-gradient(215.33deg, #11998e -4.17%, #38ef7d 100.07%);
+		height: 120vh;
+	}
+	.whole_div_welcome_text {
+		margin-bottom: 3rem;
+	}
+	.welcome_text {
+		font-family: 'Poppins', sans-serif;
+		font-style: normal;
+		font-weight: 100;
+		font-size: 40px;
+		line-height: 163px;
+		color: #fff;
+		text-align: center;
+		margin-top: -5rem;
+	}
+	.above_image {
+		width: 200px;
+	}
+	.below_text {
+		width: 110px;
+		position: absolute;
+		top: 5.8rem;
+		right: 11.5rem;
+	}
+	.below_text_teamStack {
+		position: absolute;
+		bottom: -3rem;
+		right: 3.1rem;
+	}
+	.labels {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+	}
+	.sign_up_text {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 100;
+		font-size: 45px;
+		text-align: center;
+		margin-bottom: 40px;
+		letter-spacing: -0.01em;
+	}
+}
+@media (max-width: 425px) {
+	.welcome_text_div {
+		display: none;
+	}
+	.form-container {
+		width: 100%;
+		height: 120vh;
+		background: #ffffff;
+	}
+	.div_for_mobile_view {
+		display: block;
+		background: linear-gradient(215.33deg, #11998e -4.17%, #38ef7d 100.07%);
+		width: 100%;
+	}
+	.welcome_text_mobile {
+		font-size: 3rem !important;
+	}
+	.welcome_text_p_tag_mobile {
+		line-height: 1.9rem;
+		margin-bottom: 2rem;
+	}
+	.welcome_text_mobile,
+	.welcome_text_p_tag_mobile {
+		text-align: center;
+		color: #fff;
+		font-family: 'Poppins', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+	}
+	.below_text {
+		width: 110px;
+		position: absolute;
+		top: 5.8rem;
+		right: 10.5rem;
+	}
+}
+@media (max-width: 375px) {
+	.below_text {
+		width: 110px;
+		position: absolute;
+		top: 5.8rem;
+		right: 8.9rem;
+	}
+}
+@media (max-width: 320px) {
+	.below_text {
+		width: 110px;
+		position: absolute;
+		top: 5.8rem;
+		right: 6.9rem;
+	}
+}
+
+/*
+#msg {
+    visibility: hidden;
+}
+
+#msg.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}*/

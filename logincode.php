@@ -2,10 +2,10 @@
 session_start();
 include 'core/dbh.php';
 
-$username = $_POST['username'];
+$email = $_POST['email'];
 $pwd = $_POST['pwd'];
 
-$sql = "SELECT * FROM user WHERE username='$username'";
+$sql = "SELECT * FROM user WHERE email='$email'";
 $result = $dbh->query($sql);
 $row = $result->fetch_assoc();
 $hash_pwd = $row['pwd'];
@@ -15,7 +15,7 @@ if($hash == 0){
     header("Location: login.php?error=empty");
     exit();
 }else {
-    $sql = "SELECT * FROM user WHERE username='$username' AND pwd='$hash_pwd'";
+    $sql = "SELECT * FROM user WHERE email='$email' AND pwd='$hash_pwd'";
         $result = $dbh->query($sql);
 
     if(!$row = $result->fetch_assoc()){

@@ -19,7 +19,7 @@ include 'core/dbh.php';
 <img src="logo-green.png">
 <h1>Welcome</h1>
 <button class="button button1"><a href="signup.php">SIGN UP</a></button>
-<button class="button">LOG IN</button></div>
+<button class="button"><a class="loginBtn" href="login.php">LOG IN</button></div>
 </center>
 </body>
 </html>

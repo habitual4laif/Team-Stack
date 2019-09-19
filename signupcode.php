@@ -47,7 +47,7 @@ else{
         $sql = "INSERT INTO user (fname, username, email, pwd) VALUES ('$fname', '$username', '$email', '$encrypted_password')";
         $result = $dbh->query($sql);
 
-        header("Location: signup.php?successful");
-        // header("Location: login.php");
+        // header("Location: signup.php?successful");
+        header("Location: login.php");
     }
 }

@@ -25,6 +25,11 @@ body {
 	cursor:pointer;
 	margin:5px;
 }
+
+.loginBtn {
+	color: #11998E;
+}
+
 .button1{
 	background:none;
 	border: 2px solid white;

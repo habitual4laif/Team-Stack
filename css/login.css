@@ -9,18 +9,21 @@ body {
 
 }
 
-.emptyErr {
-	font-size: 1rem;
+div.emptyErr {
+	font-size: 1.2rem;
 	margin: 0;
-	margin-top: 5rem;
+	margin-top: 2rem;
+	margin-bottom: 0;
 	text-align: center;
+	color: #ff56ff;
+	display: block;
 }
 
 .login-container {
 	display: flex;
 	display: -webkit-flex;
 	position: relative;
-	top: 130px;
+	top: 20px;
 	margin: auto;
 	margin-top: 0;
 	width: 60%;
@@ -113,6 +116,10 @@ body {
 	text-decoration: none;
 	font: 0.8em "Poppins", sans-serif;
 	color: white;
+}
+
+a:hover {
+	color: #38EF7D;
 }
 
 @media screen and (max-width: 900px) {

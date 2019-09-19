@@ -89,7 +89,7 @@ include 'core/dbh.php';
 
 
     <div class="bottom-text">
-     <p class="already_user_text">Already a user?</p>
+     <p class="already_user_text"><a href="login.php">Already a user?</a></p>
     </div>
             </center>
         </form>

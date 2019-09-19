@@ -33,7 +33,7 @@ form {
 	padding: .6rem;
 	color: #fff;
 	font-size: 17px;
-    cursor: pointer;
+  cursor: pointer;
 }
 .bottom-text {
 	margin-top: 2rem;
@@ -43,6 +43,14 @@ form {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 19px;
+}
+
+.already_user_text a {
+	color: #38ef7d;
+}
+
+.already_user_text a:hover {
+	color: #aaa;
 }
 
 .welcome_text {
@@ -106,7 +114,6 @@ form {
 	color: #38ef7d;
 	text-align: center;
 }
-
 
 .login-form {
 	padding: 80px 40px;

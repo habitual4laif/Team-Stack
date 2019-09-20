@@ -2,7 +2,6 @@
 session_start();
 
 include 'core/dbh.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -15,15 +14,12 @@ include 'core/dbh.php';
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,800|Roboto:300,400&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
 	<?php
 					$errMsg = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 					if (strpos($errMsg, 'error=empty') !== false){
 							echo "<div class='emptyErr'>Incorrect details</div>";
 					}
 	?>
-
 	<div class="login-container">
 		<div class="login-box">
 			<!-- Team stack image -->
@@ -37,6 +33,7 @@ include 'core/dbh.php';
 			</form>
 			<!-- <p class="login-help"><a href="">Forgot password?</a></p><br> -->
 			<p class="login-help"><a href="signup.php">Have no account yet?</a></p>
+			<div class="backHome"><a href="index.php">HomePage</a></div>
 		</div>
 		<div class="login-desc">
 			<h1>TEAM <span>STACK</span></h1>

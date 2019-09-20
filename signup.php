@@ -85,11 +85,9 @@ include 'core/dbh.php';
             </div>
             <center>
             <input type="submit" class="logbtn" value="Sign Up">
-
-
-
     <div class="bottom-text">
      <p class="already_user_text"><a href="login.php">Already a user?</a></p>
+     <div class="backHome"><a href="index.php">HomePage</a></div>
     </div>
             </center>
         </form>
@@ -118,12 +116,8 @@ include 'core/dbh.php';
     </center>
 
 </div>
-
 </div>
-
 </div>
-
-<script src="stack.js"></script>
 
 </body>
 </html>

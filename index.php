@@ -12,8 +12,29 @@ include 'core/dbh.php';
 <title>Welcome to Team Stack</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
+
+<?php
+if(isset($_SESSION['id'])){
+  $uid = $_SESSION['id'];
+  $sql = "SELECT * FROM user WHERE id='$uid'";
+  $result = $dbh->query($sql);
+  $row = $result->fetch_assoc();
+
+  echo "<div class='msgDisplay'>".$row['username'].'! You are login'."</div>
+
+        <form action='logoutcode.php' method='POST'>
+        <button class='logout'>LOG OUT</button>
+        </form>";
+}
+
+$errMsg = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+if (strpos($errMsg, 'error=signout') !== false){
+    echo "<div class='outMsg'>You have Successful SignOut</div>";
+}
+
+?>
+
 <center>
 <div class="message">
 <img src="logo-green.png">

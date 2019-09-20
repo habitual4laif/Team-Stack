@@ -3,15 +3,37 @@
 body {
 	background:#020202;
 }
+
+.welcomepage {
+	background-image:url('img/black-coffee-camera-coffee.png');
+	width:100vw;
+	height:100vw;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity:0.3;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.msgDisplay {
+	font-size: 3rem;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+}
+
 .message {
 	width: 1000px;
 	padding-left:30px;
 	padding-bottom:165px;
 	color: rgba(255,255,255,255);
 }
+
 .action{
 	position:relative;
 }
+
 .topmessage {
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
@@ -24,26 +46,49 @@ body {
 	font-size:25px;
 	color: rgba(255,255,255,255);
 	padding-right:250px;
-	
+
 }
+
+div.btnMsg {
+	display: flex;
+	justify-content: space-between;
+}
+
 .button {
 	border-radius: 20px;
 	background-color: rgba(255,255,255,255);
 	border:none;
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#11998E;
 	text-align:center;
 	font-size:20px;
-	padding:20px;
-	width: 300px;
+	padding:15px;
+	width: 150px;
 	transition:all 0.5s;
 	cursor:pointer;
 	margin-top:50px;
-	font-weight:bold;	
+	margin-right: 3rem;
+	font-weight:bold;
 }
+
+.inputW {
+	border-radius: 20px;
+	background-color: rgba(255,255,255,255);
+	border:none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#11998E;
+	text-align:center;
+	font-size:20px;
+	padding:15px;
+	width: 250px;
+	margin-top:50px;
+	margin-right: 3rem;
+	font-weight:bold;
+}
+
 .button span {
 	cursor:pointer;
-	display:inline-block;
+	/* display:inline-block; */
 	position:relative;
 	transition:0.5s;
 }
@@ -62,6 +107,20 @@ body {
 	opacity:1;
 	right:0;
 }
+
+.backHome a {
+	text-decoration: none;
+	font: 0.8em "Poppins", sans-serif;
+	color: white;
+	margin-bottom: 0;
+	float: left;
+	margin-left: 1.5rem;
+}
+
+.backHome a:hover {
+	color: #38EF7D;
+}
+
 img {
 	margin-top:-90px;
 	float:right;
@@ -72,9 +131,10 @@ footer {
   color: #fefefe;
   text-align: center;
   font-size:20px;
-    line-height: 26px;
-    padding: 10px 0;
+  line-height: 26px;
+  padding: 10px 0;
   }
+
  footer>a {
   font-size: 15px;
   text-transform: uppercase;
@@ -85,4 +145,3 @@ footer {
   margin:10px;
   padding:10px;
 }
-	

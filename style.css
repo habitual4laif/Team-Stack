@@ -4,6 +4,42 @@ body {
 	background: linear-gradient(205.37deg, #11998E -4.17%, #38EF7D 100.07%);
 	line-height:0;
 }
+
+.msgDisplay {
+	font-size: 2rem;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	margin-top: 2rem;
+}
+
+.outMsg {
+	font-size: 1.5rem;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	margin-top: 2rem;
+}
+
+.logout {
+	border-radius: 10px;
+	background-color:#F4F8F5;
+	border:none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#11998E;
+	text-align:center;
+	font-size:0.9rem;
+	font-weight: bold;
+	padding:8px;
+	width: 5rem;
+	height: 2rem;
+	transition:all 0.5s;
+	cursor:pointer;
+	margin:5px;
+	margin-top: 0;
+	float: right;
+}
+
 .message {
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
@@ -15,7 +51,7 @@ body {
 	border-radius: 20px;
 	background-color:#F4F8F5;
 	border:none;
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#11998E;
 	text-align:center;
 	font-size:20px;
@@ -25,6 +61,11 @@ body {
 	cursor:pointer;
 	margin:5px;
 }
+
+.loginBtn {
+	color: #11998E;
+}
+
 .button1{
 	background:none;
 	border: 2px solid white;
@@ -52,4 +93,7 @@ body {
 	right:0;
 }
 
-	
+a {
+    text-decoration: none;
+    color: #fff;
+}
